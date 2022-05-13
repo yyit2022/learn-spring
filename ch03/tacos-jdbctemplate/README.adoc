@@ -38,5 +38,7 @@ Spring Boot DevTools 在 http://localhost:8080/h2-console 启用该控制台
 通过将 `spring.datasource.generate-unique-name` 属性设置为 `false`，我们告诉 Spring 不要为数据库名称生成唯一的随机值。 相反，它应该使用设置为 `spring.datasource.name` 属性的值。 在这种情况下，数据库名称将是 "`riceballcloud`"。 因此，数据库 URL 将是 `"jdbc:h2:mem:riceballcloud"` ，您可以在 H2 控制台连接的 JDBC URL 中指定它。
 
 
+== 启动
 
+ mvn spring-boot:run
 
